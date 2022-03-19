@@ -1,0 +1,66 @@
+<button type="button" class="btn btn-warning ms-3 mt-3 mb-3" (click)="rohit()">true</button>
+<button type="button" class="btn btn-primary ms-3 mt-3 mb-3" (click)="sunny()">false</button>
+
+<div *ngIf="bharat">
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">userID</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of todos">
+        <th>{{data.userId}}</th>
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.completed}}</td>
+      </tr>    
+    </tbody>
+</table>
+</div>
+
+
+<div *ngIf="bharat1">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">userID</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of data1">
+        <th>{{data.userId}}</th>
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.completed}}</td>
+      </tr>    
+    </tbody>
+</table>
+</div>
+
+<div *ngIf="bharat2">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">userID</th>
+        <th scope="col">id</th>
+        <th scope="col">title</th>
+        <th scope="col">completed </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of data2">
+        <th>{{data.userId}}</th>
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <td>{{data.completed}}</td>
+      </tr>    
+    </tbody>
+</table>
+</div>
